@@ -1,0 +1,53 @@
+* {
+  color: #5b5b5b;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-mute {
+    @apply text-gray-400;
+  }
+  .gradient-primary {
+    @apply from-violet-500 to-fuchsia-500;
+  }
+  .text-gradient {
+    @apply from-violet-500 to-fuchsia-500 bg-gradient-to-r self-start bg-clip-text text-transparent;
+  }
+}
+
+@layer base {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-mute {
+    @apply text-gray-400;
+  }
+  h1 {
+    @apply text-5xl text-black font-semibold;
+  }
+  h2 {
+    @apply text-3xl text-black font-medium;
+  }
+  h3 {
+    @apply text-2xl text-black font-medium;
+  }
+  h4 {
+    @apply text-xl text-black font-medium;
+  }
+  p {
+    @apply text-base text-primary;
+  }
+  [type="submit"] {
+    @apply from-violet-500 to-fuchsia-500 bg-gradient-to-tr text-white px-5 py-2 capitalize rounded-md whitespace-nowrap cursor-pointer;
+  }
+}
+
+.scrollbar {
+  scrollbar-width: thin;
+}
