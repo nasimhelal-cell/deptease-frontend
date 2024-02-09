@@ -4,7 +4,7 @@ const SignFromWrapper = ({ children, icon, title, className }) => {
   return (
     <div
       className={cn(
-        "flex flex-col gap-5 bg-white p-5 backdrop-blur-lg backdrop-brightness-0 hover:shadow-lg duration-300 rounded w-3/5",
+        "flex flex-col gap-5 bg-white p-5 backdrop-blur-lg backdrop-brightness-0 rounded-md overflow-hidden w-3/5",
         className
       )}
     >

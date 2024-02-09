@@ -1,4 +1,3 @@
-import Navbar from "@/components/common/Navbar";
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 

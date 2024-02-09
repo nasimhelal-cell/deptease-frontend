@@ -1,6 +1,6 @@
 "use client";
 import cn from "@/lib/cn";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 function Input({
   id,
@@ -14,7 +14,7 @@ function Input({
 
   const [inputValue, setInputValue] = useState("");
   const handleBlur = () => {
-    const value = input.current.value;
+    const value = input.current?.value;
     if (onChange) {
       onChange(value);
     }

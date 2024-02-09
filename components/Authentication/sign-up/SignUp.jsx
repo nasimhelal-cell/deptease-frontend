@@ -4,6 +4,7 @@ import { useState } from "react";
 import Input from "../../input/Input";
 import { toast } from "react-toastify";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function SignUp() {
   const [firstName, setFirstName] = useState("");
@@ -89,9 +90,17 @@ export default function SignUp() {
         required
       />
 
-      <button type="submit" className="self-end">
-        Sign-up
-      </button>
+      <div className="w-full flex items-center justify-between">
+        <span>
+          Already have account?
+          <span className="text-blue-400 ">
+            <Link href="/sign-in"> Sign-in </Link>
+          </span>
+        </span>
+        <button type="submit" className="self-end">
+          Sign-up
+        </button>
+      </div>
     </form>
   );
 }
