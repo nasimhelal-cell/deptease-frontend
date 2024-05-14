@@ -1,7 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { Navbar } from "keep-react";
-import { MagnifyingGlass } from "phosphor-react";
 import Logo from "./Logo";
 
 const GetNavbar = () => {
