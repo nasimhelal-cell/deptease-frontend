@@ -29,7 +29,6 @@ const DropDown: React.FC<DropDownProps> = ({
   onChange,
   value,
 }) => {
-  const defaultWidth = "w-[280px]";
   return (
     <Select onValueChange={onChange} defaultValue={value}>
       <SelectTrigger className={widthClass}>
