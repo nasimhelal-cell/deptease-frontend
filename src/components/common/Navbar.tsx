@@ -6,7 +6,10 @@ import Logo from "./Logo";
 
 const GetNavbar = () => {
   return (
-    <Navbar fluid={true} className="w-full bg-opacity-80 backdrop-blur-2xl">
+    <Navbar
+      fluid={true}
+      className="w-full shadow-sm hover:shadow-md duration-300 backdrop-blur-2xl"
+    >
       <Navbar.Container className="flex items-center justify-between w-full">
         <Navbar.Container className="flex items-center">
           <Navbar.Brand>
