@@ -1,3 +1,5 @@
+import SignUpForm from "@/components/client/auth/SignUp";
+import Alert from "@/components/common/Alert";
 import Modal from "@/components/common/Modal";
 import GetNavbar from "@/components/common/Navbar";
 import { H1, P } from "@/components/common/TypoGraphy";
@@ -18,13 +20,9 @@ export default function Home() {
             <div className="flex items-center gap-5 mt-2 justify-center">
               <Modal
                 button={<Button>{`Sign Up Now, It's free`}</Button>}
-                title="login"
+                className="p-0 w-auto"
               >
-                <div>hello</div>
-                <DialogFooter>
-                  <Button type="submit">Save changes</Button>
-                  <Button type="submit">Save changes</Button>
-                </DialogFooter>
+                <SignUpForm />
               </Modal>
               <Button variant={"secondary"}>Learn More</Button>
             </div>
