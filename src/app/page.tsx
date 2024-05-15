@@ -1,11 +1,10 @@
 import SignUpForm from "@/components/client/auth/SignUp";
-import Alert from "@/components/common/Alert";
 import Modal from "@/components/common/Modal";
 import GetNavbar from "@/components/common/Navbar";
 import { H1, P } from "@/components/common/TypoGraphy";
+import { FaArrowRight } from "react-icons/fa";
 
 import { Button } from "@/components/ui/button";
-import { DialogFooter } from "@/components/ui/dialog";
 
 export default function Home() {
   return (
@@ -24,7 +23,10 @@ export default function Home() {
               >
                 <SignUpForm />
               </Modal>
-              <Button variant={"secondary"}>Learn More</Button>
+              <Button variant={"secondary"}>
+                <FaArrowRight />
+                Learn More
+              </Button>
             </div>
           </div>
         </div>
