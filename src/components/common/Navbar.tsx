@@ -11,7 +11,7 @@ import LoginForm from "../client/auth/Login";
 const GetNavbar = () => {
   return (
     <Navbar className="shadow-md hover:shadow-lg flex items-center min-h-[70px] max-h-[70px] h-[70px]">
-      <Navbar.Brand href="https://flowbite-react.com">
+      <Navbar.Brand href="/">
         <Logo />
       </Navbar.Brand>
       <div className="flex gap-5">
