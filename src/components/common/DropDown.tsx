@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/select";
 import { nanoid } from "nanoid";
 
-interface List {
+export interface List {
   title: string;
   value: string;
 }
