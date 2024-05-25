@@ -1,4 +1,12 @@
-import { CiSettings } from "react-icons/ci";
+import { IoMdSettings } from "react-icons/io";
+import { LiaUniversitySolid } from "react-icons/lia";
+import { MdSubject } from "react-icons/md";
+import { PiStudentFill } from "react-icons/pi";
+import { LiaChalkboardTeacherSolid } from "react-icons/lia";
+import { FaPeopleGroup } from "react-icons/fa6";
+import { MdPresentToAll } from "react-icons/md";
+import { FaWpforms } from "react-icons/fa";
+import { PiExam } from "react-icons/pi";
 
 export interface SidebarItem {
   title: string;
@@ -14,11 +22,11 @@ export interface SidebarSection {
 export const SidebarItems: SidebarSection[] = [
   {
     label: "general settings",
-    icon: CiSettings,
+    icon: IoMdSettings,
     items: [
       {
-        title: "department profile",
-        href: "dept-profile",
+        title: "profile",
+        href: "profile",
       },
       {
         title: "fee particular",
@@ -28,21 +36,21 @@ export const SidebarItems: SidebarSection[] = [
   },
   {
     label: "classes",
-    icon: CiSettings,
+    icon: LiaUniversitySolid,
     items: [
       {
         title: "all classes",
         href: "all-classes",
       },
       {
-        title: "new class",
-        href: "new-class",
+        title: "add new class",
+        href: "add-new-class",
       },
     ],
   },
   {
     label: "courses",
-    icon: CiSettings,
+    icon: MdSubject,
     items: [
       {
         title: "all courses",
@@ -56,11 +64,15 @@ export const SidebarItems: SidebarSection[] = [
   },
   {
     label: "students",
-    icon: CiSettings,
+    icon: PiStudentFill,
     items: [
       {
         title: "all students",
         href: "students",
+      },
+      {
+        title: "profile",
+        href: "profile",
       },
       {
         title: "add new student",
@@ -69,22 +81,22 @@ export const SidebarItems: SidebarSection[] = [
     ],
   },
   {
-    label: "employees",
-    icon: CiSettings,
+    label: "teachers",
+    icon: LiaChalkboardTeacherSolid,
     items: [
       {
-        title: "all employees",
-        href: "all-employees",
+        title: "all teachers",
+        href: "all-teachers",
       },
       {
-        title: "add new employee",
-        href: "add-new-employee",
+        title: "add new teacher",
+        href: "add-new-teacher",
       },
     ],
   },
   {
     label: "staffs",
-    icon: CiSettings,
+    icon: FaPeopleGroup,
     items: [
       {
         title: "all staffs",
@@ -98,7 +110,7 @@ export const SidebarItems: SidebarSection[] = [
   },
   {
     label: "attendance",
-    icon: CiSettings,
+    icon: MdPresentToAll,
     items: [
       {
         title: "students attendance",
@@ -123,6 +135,34 @@ export const SidebarItems: SidebarSection[] = [
       {
         title: "staffs attendance report",
         href: "staffs-attendance-report",
+      },
+    ],
+  },
+  {
+    label: "forms",
+    icon: FaWpforms,
+    items: [
+      {
+        title: "all forms",
+        href: "all-forms",
+      },
+      {
+        title: "add new form",
+        href: "add-new-form",
+      },
+    ],
+  },
+  {
+    label: "exams",
+    icon: PiExam,
+    items: [
+      {
+        title: "all exams",
+        href: "all-exams",
+      },
+      {
+        title: "add new exam",
+        href: "add-new-exam",
       },
     ],
   },

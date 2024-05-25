@@ -4,12 +4,10 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { SidebarItems } from "@/lib/sidebarItems";
 import { Sidebar } from "flowbite-react";
 import { nanoid } from "nanoid";
-import {
-  HiChartPie,
-  HiOutlineMinusSm,
-  HiOutlinePlusSm,
-  HiTable,
-} from "react-icons/hi";
+import { BiMessageDetail } from "react-icons/bi";
+import { CiLogout } from "react-icons/ci";
+import { HiChartPie, HiOutlineMinusSm, HiOutlinePlusSm } from "react-icons/hi";
+
 import { twMerge } from "tailwind-merge";
 import DeptInfo from "../client/DeptInfo";
 
@@ -22,9 +20,13 @@ export function SidebarNav() {
           aria-label="Sidebar with multi-level dropdown example"
           className="capitalize"
         >
-          <Sidebar.Items>
+          <Sidebar.Items className="text-sm">
             <Sidebar.ItemGroup>
-              <Sidebar.Item href="/dashboard" icon={HiChartPie}>
+              <Sidebar.Item
+                href="/department/dashboard"
+                icon={HiChartPie}
+                className="hover:bg-input"
+              >
                 dashboard
               </Sidebar.Item>
 
@@ -34,7 +36,7 @@ export function SidebarNav() {
                     key={nanoid()}
                     icon={item.icon}
                     label={item.label}
-                    className="flex gap-3 capitalize"
+                    className="flex gap-3 capitalize hover:bg-input"
                     renderChevronIcon={(theme, open) => {
                       const IconComponent = open
                         ? HiOutlineMinusSm
@@ -52,7 +54,11 @@ export function SidebarNav() {
                   >
                     {item.items.map((newItem) => {
                       return (
-                        <Sidebar.Item key={nanoid()} href={newItem.href}>
+                        <Sidebar.Item
+                          key={nanoid()}
+                          href={newItem.href}
+                          className="hover:bg-input"
+                        >
                           {newItem.title}
                         </Sidebar.Item>
                       );
@@ -61,7 +67,14 @@ export function SidebarNav() {
                 );
               })}
 
-              <Sidebar.Item href="#" icon={HiTable}>
+              <Sidebar.Item
+                href="/department/messages"
+                icon={BiMessageDetail}
+                className="hover:bg-input"
+              >
+                Messaging
+              </Sidebar.Item>
+              <Sidebar.Item href="#" icon={CiLogout} className="hover:bg-input">
                 logout
               </Sidebar.Item>
             </Sidebar.ItemGroup>

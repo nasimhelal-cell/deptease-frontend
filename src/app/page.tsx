@@ -24,7 +24,7 @@ export default function Home() {
                 <SignUpForm />
               </Modal>
               <Button variant={"secondary"}>
-                <FaArrowRight />
+                <FaArrowRight className="mr-2" />
                 Learn More
               </Button>
             </div>
