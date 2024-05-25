@@ -25,8 +25,8 @@ export const SidebarItems: SidebarSection[] = [
     icon: IoMdSettings,
     items: [
       {
-        title: "department profile",
-        href: "dept-profile",
+        title: "profile",
+        href: "profile",
       },
       {
         title: "fee particular",
@@ -69,6 +69,10 @@ export const SidebarItems: SidebarSection[] = [
       {
         title: "all students",
         href: "students",
+      },
+      {
+        title: "profile",
+        href: "profile",
       },
       {
         title: "add new student",

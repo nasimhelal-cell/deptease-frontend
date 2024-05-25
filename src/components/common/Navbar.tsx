@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Navbar } from "flowbite-react";
 import Logo from "./Logo";
 import Link from "next/link";
-import Alert from "./Alert";
 import SignUpForm from "../client/auth/SignUp";
 import Modal from "./Modal";
 import LoginForm from "../client/auth/Login";

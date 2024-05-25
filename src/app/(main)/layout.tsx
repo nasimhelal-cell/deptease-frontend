@@ -17,7 +17,7 @@ export default function MainLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <section className="h-screen flex ">
+    <section className="h-screen flex">
       <SidebarNav />
       <ScrollArea className="w-full h-full flex-1 flex flex-col">
         <header className="flex items-center px-4 md:px-8 pt-4 md:pt-8 ">
@@ -32,9 +32,9 @@ export default function MainLayout({
           </div>
         </header>
 
-        <main className="flex-1 flex flex-col gap-4 p-4 md:gap-8 md:p-8 bg-red-400">
+        <div className="flex-1 flex flex-col gap-4 p-4 md:gap-8 md:p-8">
           {children}
-        </main>
+        </div>
       </ScrollArea>
     </section>
   );

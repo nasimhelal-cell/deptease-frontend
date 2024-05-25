@@ -4,14 +4,9 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { SidebarItems } from "@/lib/sidebarItems";
 import { Sidebar } from "flowbite-react";
 import { nanoid } from "nanoid";
-import {
-  HiChartPie,
-  HiOutlineMinusSm,
-  HiOutlinePlusSm,
-  HiTable,
-} from "react-icons/hi";
 import { BiMessageDetail } from "react-icons/bi";
 import { CiLogout } from "react-icons/ci";
+import { HiChartPie, HiOutlineMinusSm, HiOutlinePlusSm } from "react-icons/hi";
 
 import { twMerge } from "tailwind-merge";
 import DeptInfo from "../client/DeptInfo";
@@ -28,7 +23,7 @@ export function SidebarNav() {
           <Sidebar.Items className="text-sm">
             <Sidebar.ItemGroup>
               <Sidebar.Item
-                href="/dashboard"
+                href="/department/dashboard"
                 icon={HiChartPie}
                 className="hover:bg-input"
               >
@@ -73,7 +68,7 @@ export function SidebarNav() {
               })}
 
               <Sidebar.Item
-                href="#"
+                href="/department/messages"
                 icon={BiMessageDetail}
                 className="hover:bg-input"
               >

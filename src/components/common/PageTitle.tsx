@@ -5,7 +5,13 @@ import { H2 } from "./TypoGraphy";
 
 const PageTitle = () => {
   const pathname = usePathname();
-  return <H2 className="capitalize" text={pathname.slice(1)} />;
+  let path = pathname.split("/");
+  return (
+    <H2
+      className="capitalize"
+      text={path[path.length - 1].split("-").join(" ")}
+    />
+  );
 };
 
 export default PageTitle;
